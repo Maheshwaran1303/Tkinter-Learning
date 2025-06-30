@@ -10,10 +10,14 @@ def load_file():
         text.insert(tk.END, "File not found.")
 
 root = tk.Tk()
+
 root.title("Text File Viewer")
+
 entry = tk.Entry(root)
 entry.pack()
+
 tk.Button(root, text="Load File", command=load_file).pack()
 text = tk.Text(root, height=15, width=50)
 text.pack()
+
 root.mainloop()

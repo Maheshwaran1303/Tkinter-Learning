@@ -7,8 +7,11 @@ def update_clock():
     root.after(1000, update_clock)
 
 root = tk.Tk()
+
 root.title("Digital Clock")
 label = tk.Label(root, font=("Arial", 40))
 label.pack()
+
 update_clock()
+
 root.mainloop()

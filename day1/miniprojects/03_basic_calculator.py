@@ -8,10 +8,14 @@ def calculate():
         label_result.config(text="Invalid Input")
 
 root = tk.Tk()
+
 root.title("Calculator")
+
 entry = tk.Entry(root)
 entry.pack()
+
 tk.Button(root, text="Calculate", command=calculate).pack()
 label_result = tk.Label(root, text="Result:")
 label_result.pack()
+
 root.mainloop()

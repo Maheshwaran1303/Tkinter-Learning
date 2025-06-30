@@ -21,11 +21,16 @@ def reset():
     entry.delete(0, tk.END)
 
 root = tk.Tk()
+
 root.title("Guess the Number")
+
 label = tk.Label(root, text="Guess a number between 1-100")
 label.pack()
+
 entry = tk.Entry(root)
 entry.pack()
+
 tk.Button(root, text="Guess", command=guess).pack()
 tk.Button(root, text="Reset", command=reset).pack()
+
 root.mainloop()

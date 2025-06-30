@@ -17,13 +17,18 @@ def next_question():
     result_label.config(text="")
 
 root = tk.Tk()
+
 root.title("Quiz App")
 label = tk.Label(root, text=questions[0][0])
 label.pack()
+
 entry = tk.Entry(root)
 entry.pack()
+
 tk.Button(root, text="Submit", command=check_answer).pack()
 tk.Button(root, text="Next", command=next_question).pack()
+
 result_label = tk.Label(root, text="")
 result_label.pack()
+
 root.mainloop()
